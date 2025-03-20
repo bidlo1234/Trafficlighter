@@ -41,7 +41,7 @@ namespace светофор {
                         g.FillEllipse(myBrush1, 80, 95, 70, 70);
                         down = true;
                         nom = 2;  // Будет желтый
-                        Thread.Sleep(2000);
+                        //Thread.Sleep(2000);
 
                     }
                     break;
@@ -54,13 +54,13 @@ namespace светофор {
                             myBrush1.Color = Color.LightGray;
                             g.FillEllipse(myBrush1, 80, 25, 70, 70);
                             nom = 3;
-                            Thread.Sleep(2000);
+                            //Thread.Sleep(2000);
                         } else  // Если вверх
                           {
                             myBrush1.Color = Color.LightGray;
                             g.FillEllipse(myBrush1, 80, 165, 70, 70);
                             nom = 1;
-                            Thread.Sleep(2000);
+                            //Thread.Sleep(2000);
                         }
                     }
                     break;
@@ -72,7 +72,7 @@ namespace светофор {
                         g.FillEllipse(myBrush1, 80, 95, 70, 70);
                         down = false;
                         nom = 2;
-                        Thread.Sleep(2000);
+                        //Thread.Sleep(2000);
                     }
                     break;
             }

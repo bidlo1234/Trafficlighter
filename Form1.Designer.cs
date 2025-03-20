@@ -27,7 +27,6 @@
             StartButton = new Button();
             StopBtn = new Button();
             timer1 = new System.Windows.Forms.Timer(components);
-            label1 = new Label();
             SuspendLayout();
             // 
             // StartButton
@@ -54,30 +53,20 @@
             // 
             // timer1
             // 
+            timer1.Interval = 1000;
             timer1.Tick += Changer;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(620, 226);
-            label1.Name = "label1";
-            label1.Size = new Size(38, 15);
-            label1.TabIndex = 2;
-            label1.Text = "label1";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(label1);
             Controls.Add(StopBtn);
             Controls.Add(StartButton);
             Name = "Form1";
             Text = "Form1";
             Paint += TrafficlightCreater;
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -85,6 +74,5 @@
         private Button StartButton;
         private Button StopBtn;
         private System.Windows.Forms.Timer timer1;
-        private Label label1;
     }
 }
